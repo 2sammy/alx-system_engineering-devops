@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # Command to make an nginx server listen on port 80
 apt-get -y update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 
+=======
+# Command to make an nginx server listen on port 80, shorter versions
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+pkill -1 nginx
+>>>>>>> f02275a1ba310ab1aff48635ab8f6cbf263fb0b3
